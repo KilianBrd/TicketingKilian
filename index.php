@@ -17,7 +17,7 @@
                         'adminmonblog', 'simone');
                 $billets = $bdd->query('select * from T_BILLET LEFT JOIN T_ETAT ON T_BILLET.BIL_id = T_ETAT.id order by BIL_ID desc');
                 foreach ($billets as $billet):
-                    ?
+                    ?>
                     <article>
                         <header>
                             <h1 class="titreBillet"><?= $billet['BIL_TITRE'] ?></h1>
